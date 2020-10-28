@@ -23,7 +23,7 @@ fetch('https://api.example.com/v1/', {
 ```
 預設會送出cookie導致Server API傳回已經註冊過的問題。
 
-但是可以加上credentials: 'omit'後，就可以不會送出Cookie了。
+但是可以加上`credentials: 'omit'`後，就可以不會送出Cookie了。
 
 結果改成:
 ```js
