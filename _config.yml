@@ -14,19 +14,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Henry's Page
-email: h79121@gmail.com
+email:
 description: >- # this means to ignore newlines until "baseurl:"
-  哈囉! 這裡是Henry的軟體紀錄、分享
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://swiftstar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 twitter_username: HenrySwiftstar
-github_username:  Swiftstar
+github_username: swiftstar
+minimal_mistakes_skin: default
+search: true
+locale: "zh-TW"
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -39,3 +48,75 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Henry Zheng"
+  avatar : "/assets/images/henry.jpg"
+  bio    : "I'm software engineer. Doing game develop, and I also like web develop too."
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://swiftstar.github.io"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com/zheng.shaoyu"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/HenrySwiftstar"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Swiftstar"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/HenrySwiftstar"
+
+footer:
+  links:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com/zheng.shaoyu"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/HenrySwiftstar"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Swiftstar"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/HenrySwiftstar"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

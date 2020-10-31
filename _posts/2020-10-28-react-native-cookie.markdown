@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "React Native的Cookie紀錄"
-date:   2020-10-28 18:50:11 +0800
-categories: jekyll update
+title: "React Native的Cookie紀錄"
+date: 2020-10-28T18:50:11+08:00
+categories: 
+  - blog
+tag:
+  - React Native
 ---
 
 最近在使用React Native開發跨平台APP使用Fetch時，遇到Server API會記錄的Cookie，導致如果直接使用Fetch會產生非預期的結果。  

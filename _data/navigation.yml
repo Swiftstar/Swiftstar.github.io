@@ -1,0 +1,9 @@
+main:
+  - title: "文章"
+    url: /posts/
+  - title: "分類"
+    url: /categories/
+  - title: "標籤"
+    url: /tags/
+  - title: "關於"
+    url: /about/
