@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Henry Zheng"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://swiftstar.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Swiftstar/Swiftstar.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -70,9 +70,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "HenrySwiftstar"
 facebook:
-  username               :
+  username               : "zheng.shaoyu"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -82,6 +82,10 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://twitter.com/HenrySwiftstar"
+    - "https://www.facebook.com/zheng.shaoyu"
+    - "https://instagram.com/henryswiftstar"
+    - "https://www.linkedin.com/in/shao-yu-zheng-274810a8"
 
 # Analytics
 analytics:
@@ -189,7 +193,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Taipei # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
